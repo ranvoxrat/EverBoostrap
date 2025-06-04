@@ -4,8 +4,6 @@ html,body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; 
-   /* width: 100vw;
-   height: 100vh; */
    
 }
 *, *:before, *:after {
@@ -48,7 +46,7 @@ html,body {
     filter: blur(3px); 
     z-index: -1;
 } */
-.nav-link{
+/* .nav-link{
   position: relative;
   margin-bottom: 20;
 }
@@ -61,6 +59,30 @@ html,body {
   width: 4rem;
   height: 4px;
   background-color: green;
+} */
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #08c385; /* Customize underline color */
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 .text-1{
   font-family: "Poppins", sans-serif;
@@ -252,11 +274,53 @@ color: rgb(0, 128, 90)!important;
   color: rgb(4, 180, 107)!important; 
   font-weight: 600;
 }
+
+.heading-with-line::before {
+  content: "";
+  position: absolute;
+  left: -20px; /* Adjust spacing from text */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 40px;
+  background-color: #07be72; /* Bootstrap primary blue or your brand color */
+  border-radius: 2px;
+}
+.logo1{
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.responsive-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+ .modal input,
+  .modal select,
+  .modal option,
+  .modal textarea {
+    color: #000 !important;
+  }
+  .modal input::placeholder,
+  .modal textarea::placeholder {
+    color: #555; 
+    opacity: 1; 
+  }
+@media (max-width: 991.98px) {
+  .heading-with-line::before {
+    display: none; 
+  }
+}
+
 @media (max-width: 575.98px) {
   html,body,*{
     position: relative;
     box-sizing: border-box;
     scroll-behavior: smooth;
+  }
+  .responsive-logo {
+    width: 10%;
+    height: 10%;
   }
   #btn-modal{
     font-size: 12px;

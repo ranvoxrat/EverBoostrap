@@ -24,8 +24,11 @@
 <body class="h-100">
   <!-- Fixed Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top p-4"  id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Ever Dental Center</a>
+    <div class="container d-inline-flex justify-content-between align-items-center">
+      <div class="col-8 d-flex align-items-center gap-2">
+         <img src="./logo1.png" alt="Dental Center Logo" width="10%" height="10%" class="responsive-logo">
+         <a class="navbar-brand fw-semibold" href="#">Ever Dental Center</a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars text-dark fs-2"></i>
@@ -40,6 +43,8 @@
       </div>
     </div>
   </nav>
+ 
+
 
   <!-- Main Content with Top Padding -->
   <div class="container-fluid min-vh-100  p-4 pt-lg-5 pt-5 d-flex align-items-center justify-content-center" id="background-container">
@@ -151,9 +156,9 @@
             </select>
           </div>
 
-          <div class="form-check mb-3">
+          <div class="form-check mb-3 text-start">
             <input class="form-check-input" type="checkbox" id="newPatient1" name="new_patient1">
-            <label class="form-check-label" for="newPatient1">
+            <label class="text-black" for="newPatient1">
               Are you a new patient?
             </label>
           </div>
@@ -171,7 +176,7 @@
             </select>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-submit">
+          <button type="submit" class="btn w-100 btn-success mt-4">
             <ion-icon name="checkmark-outline"></ion-icon> Submit
           </button>
         </form>
@@ -188,6 +193,7 @@
 
  <div class="container-fluid min-vh-100 p-4 pt-5">
   <section class="section service py-5" id="service">
+    <!-- Start -->
     <div class="container">
       <p class="text-center our-service mb-2">Our Services</p>
       <h2 class="h2 section-title text-center mb-5">What We Provide</h2>
@@ -195,17 +201,45 @@
       <div class="row align-items-center">
         <!-- Left Column -->
         <div class="col-lg-4">
+         <div class="mb-4 service-card border rounded p-3 shadow-sm">
+            <div class="d-flex">
+              <img src="./service-icon-3.png" width="50" class="me-3" alt="Dental Braces">
+              <div>
+                <h5 class="fw-bold mb-1">Dental Braces</h5>
+                <p class="mb-0">Personalized orthodontic care using traditional and invisible braces to perfect your smile.</p>
+              </div>
+            </div>
+          </div>
 
           <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
               <img src="./service-icon-1.png" width="50" class="me-3" alt="Root Canal">
               <div>
-                <h5 class="fw-bold mb-1">Root Canal</h5>
+                <h5 class="fw-bold mb-1">General Dentistry</h5>
                 <p class="mb-0">Advanced nerve therapy to relieve pain and preserve natural teeth structure.</p>
               </div>
             </div>
           </div>
+          <div class="mb-4 service-card border rounded p-3 shadow-sm">
+            <div class="d-flex">
+              <img src="./service-icon-4.png" width="50" class="me-3" alt="Dental Surgery">
+              <div>
+                <h5 class="fw-bold mb-1">Dental Surgery</h5>
+                <p class="mb-0">Complex extractions and minor oral surgeries performed with precision and care.</p>
+              </div>
+            </div>
+          </div>
+          
 
+        </div>
+
+        <!-- Center Image -->
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <img src="./service-banner.png" class="img-fluid" alt="Service Banner">
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-4">
           <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
               <img src="./service-icon-6.png" width="50" class="me-3" alt="Cosmetic Teeth">
@@ -218,6 +252,17 @@
 
           <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
+              <img src="./service-icon-2.png" width="50" class="me-3" alt="Teeth Alignment">
+              <div>
+                <h5 class="fw-bold mb-1">Prosthodontics</h5>
+                <p class="mb-0">Innovative orthodontic treatments to correct bite issues and jaw alignment.</p>
+              </div>
+            </div>
+          </div>
+
+         
+         <div class="mb-4 service-card border rounded p-3 shadow-sm">
+            <div class="d-flex">
               <img src="./service-icon-5.png" width="50" class="me-3" alt="X-Ray">
               <div>
                 <h5 class="fw-bold mb-1">X-Ray (Panoramic Periapical)</h5>
@@ -226,46 +271,8 @@
             </div>
           </div>
         </div>
-
-        <!-- Center Image -->
-        <div class="col-lg-4 text-center mb-4 mb-lg-0">
-          <img src="./service-banner.png" class="img-fluid" alt="Service Banner">
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-lg-4">
-          <div class="mb-4 service-card border rounded p-3 shadow-sm">
-            <div class="d-flex">
-              <img src="./service-icon-2.png" width="50" class="me-3" alt="Teeth Alignment">
-              <div>
-                <h5 class="fw-bold mb-1">Teeth Alignment</h5>
-                <p class="mb-0">Innovative orthodontic treatments to correct bite issues and jaw alignment.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-4 service-card border rounded p-3 shadow-sm">
-            <div class="d-flex">
-              <img src="./service-icon-4.png" width="50" class="me-3" alt="Dental Surgery">
-              <div>
-                <h5 class="fw-bold mb-1">Dental Surgery</h5>
-                <p class="mb-0">Complex extractions and minor oral surgeries performed with precision and care.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-4 service-card border rounded p-3 shadow-sm">
-            <div class="d-flex">
-              <img src="./service-icon-3.png" width="50" class="me-3" alt="Dental Braces">
-              <div>
-                <h5 class="fw-bold mb-1">Dental Braces</h5>
-                <p class="mb-0">Personalized orthodontic care using traditional and invisible braces to perfect your smile.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
+      <!-- End -->
     </div>
   </section>
 </div>
@@ -426,15 +433,17 @@
     </div>
   </div>
 </div>
- <div class="container py-5">
+ <div class="container py-5 mb-5">
   <div class="row justify-content-center ">
-       <h1 class="text-center text-black text4">Contact Us</h1>
+      
     <div class="col-12 col-lg-12">
       <div class="shadow rounded-4 p-4 p-lg-5 d-flex flex-column flex-lg-row align-items-stretch gap-4">
-       
+      
         <!-- Left: Contact Info -->
         <div class="col-lg-5 border-end pe-lg-4">
     
+        <h1 class="text-center text-lg-start text-black text4 mb-4 position-relative heading-with-line">Contact Us</h1>
+
 
 
           <div class="mb-4">
@@ -443,11 +452,12 @@
               <ion-icon name="call-outline" class="fs-5"></ion-icon>
               </div>
               <div>
-                <h6 class="mb-0 fw-bold t-1">Hotlines</h6>
-                <small>0921-307-2577<br>0956-098-3080</small>
+                <h6 class="mb-0 fw-bold t-1">Ever Dental Hotlines</h6>
+                <small>Smart: 0920-241-7762<br>Globe: 0995-422-1317</small>
               </div>
             </div>
           </div>
+
 
           <div class="mb-4">
             <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start mb-2">
@@ -495,8 +505,8 @@
       <!-- Brand & Description -->
       <div class="col-12 col-md-6 col-lg-4">
         <a href="#" class="d-flex align-items-center mb-3 text-decoration-none">
-          <img src="./assets/images/logo1.png" alt="Dental Center Logo" width="40" height="40" class="me-2">
-          <span class="h5 mb-0 fw-bold text-primary">Ever Dental Center</span>
+          <img src="./logo1.png" alt="Dental Center Logo" width="10%" height="10%" class="me-2">
+          <span class="logo1">Ever Dental Center</span>
         </a>
         <p class="text-white">
           At Ever Dental Center, we are committed to providing exceptional dental care with a focus on your comfort and satisfaction. Your smile is our priority, and we strive to make every visit a pleasant experience.
@@ -517,9 +527,8 @@
           <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Home</a></li>
           <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>About Us</a></li>
           <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Services</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Project</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Our Team</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Latest Blog</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Latest Blogs</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Contact</a></li>
         </ul>
       </div>
 
@@ -527,12 +536,12 @@
       <div class="col-6 col-md-3 col-lg-2">
         <h6 class="fw-bold mb-3">Our Services</h6>
         <ul class="list-unstyled">
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Root Canal</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Teeth Alignment</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Cosmetic Teeth</a></li>
-          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>X-Ray (Panoramic Periapical)</a></li>
           <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Dental Braces</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>General Dentistry</a></li>
           <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Dental Surgery</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Prosthodontics</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>Cosmetic Dentistry</a></li>
+          <li><a href="#" class="d-flex align-items-center text-decoration-none mb-2 text-white"><ion-icon name="add-outline" class="me-2"></ion-icon>X-Ray (Panoramic Periapical)</a></li>
         </ul>
       </div>
 
@@ -541,17 +550,18 @@
         <h6 class="fw-bold mb-3">Contact Us</h6>
         <ul class="list-unstyled">
           <li class="d-flex mb-3 align-items-start">
-            <ion-icon name="location-outline" class="text-success fs-4 me-3"></ion-icon>
+            <ion-icon name="location-outline" class="text-white fs-4 me-3"></ion-icon>
             <address class="text-white">
               #2 Vicente Cordero Street, Brgy. Marulas, <br>Valenzuela City, Philippines
             </address>
           </li>
           <li class="d-flex mb-3 align-items-center">
-            <ion-icon name="call-outline" class="text-success fs-4 me-3"></ion-icon>
-            <span class="text-white">0921-307-2577<br>0956-098-3080</span>
+            <ion-icon name="call-outline" class="text-white fs-4 me-3"></ion-icon>
+            <!-- <span class="text-white">0921-307-2577<br>0956-098-3080</span> -->
+             <small class="text-white">Smart: 0920-241-7762<br>Globe: 0995-422-1317</small>
           </li>
           <li class="d-flex align-items-center">
-            <ion-icon name="mail-outline" class="text-success fs-4 me-3"></ion-icon>
+            <ion-icon name="mail-outline" class="text-white fs-4 me-3"></ion-icon>
             <a href="mailto:everdentalcustomerservice@gmail.com" class="text-decoration-none text-white">
               everdentalcustomerservice@gmail.com
             </a>
