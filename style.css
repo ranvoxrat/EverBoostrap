@@ -4,7 +4,7 @@ html,body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; 
-   
+    scroll-behavior: smooth!important;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -12,7 +12,7 @@ html,body {
   box-sizing: inherit;
  
   color: white!important;
-  scroll-behavior: smooth!important;
+ 
   }
 #background-container{
     position: relative!important;
@@ -231,6 +231,9 @@ html,body {
 {
   color: black!important;
 }
+.modal-content>.modal-header>.btn-close{
+  color: white!important;
+}
 .btn-submit{
   width: 100%;
   background-image: linear-gradient(to left, #70f570, #49c628)!important;
@@ -285,6 +288,9 @@ color: rgb(0, 128, 90)!important;
   height: 40px;
   background-color: #07be72; /* Bootstrap primary blue or your brand color */
   border-radius: 2px;
+}
+#service {
+  scroll-margin-top: 120px; /* Adjust if your navbar is taller/shorter */
 }
 .logo1{
   font-family: "Poppins", sans-serif;

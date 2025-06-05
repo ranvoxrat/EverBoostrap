@@ -36,9 +36,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center text-lg-start ms-lg-auto gap-lg-5 gap-sm-2">
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#container-about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#container-service">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#container-contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -59,9 +59,9 @@
           Experience the best dental care with our expert team. We ensure your smile stays healthy and radiant.
         </p>
        <div class="d-flex flex-lg-row align-items-center justify-content-center flex-column-reverse p-4 gap-3 col-lg-12 col-md-8 col-sm-4">
-          <a href="#" class="btn btn-primary btn-lg m-2 mb-sm-3 mb-lg-0" id="explore">
-  <i class="bi bi-arrow-down ms-2"></i> Explore
-</a>
+          <a href="#container-service" class="btn btn-primary btn-lg m-2 mb-sm-3 mb-lg-0" id="explore">
+             <i class="bi bi-arrow-down ms-2"></i> Explore
+           </a>
 
 <button type="button" class="btn btn-primary btn-lg m-2" id="btn-modal" data-bs-toggle="modal" data-bs-target="#appointmentModal1">
   <i class="bi bi-calendar-check me-2"></i> Book an Appointment
@@ -77,7 +77,10 @@
         <h5 class="modal-title" id="appointmentModalLabel">
           <ion-icon name="calendar-outline"></ion-icon> Book an Appointment
         </h5>
-        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+          <ion-icon name="close-outline" size="large"></ion-icon>
+        </button>
+
       </div>
 
       <div class="modal-body">
@@ -176,7 +179,7 @@
             </select>
           </div>
 
-          <button type="submit" class="btn w-100 btn-success mt-4">
+          <button type="submit" class="btn w-100 btn-success mt-2 mb-4">
             <ion-icon name="checkmark-outline"></ion-icon> Submit
           </button>
         </form>
@@ -191,8 +194,8 @@
     </div>
   </div>
 
- <div class="container-fluid min-vh-100 p-4 pt-5">
-  <section class="section service py-5" id="service">
+ <div class="container-fluid min-vh-100 p-4 pt-5" id="container-service">
+  <section class="section service py-5" >
     <!-- Start -->
     <div class="container">
       <p class="text-center our-service mb-2">Our Services</p>
@@ -216,16 +219,16 @@
               <img src="./service-icon-1.png" width="50" class="me-3" alt="Root Canal">
               <div>
                 <h5 class="fw-bold mb-1">General Dentistry</h5>
-                <p class="mb-0">Advanced nerve therapy to relieve pain and preserve natural teeth structure.</p>
+                <p class="mb-0">Comprehensive oral care including cleanings, fillings, and root canal therapy to maintain healthy teeth.</p>
               </div>
             </div>
           </div>
           <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
-              <img src="./service-icon-4.png" width="50" class="me-3" alt="Dental Surgery">
+              <img src="./dental-surgery_6552251.png" width="50" class="me-3" alt="Dental Surgery">
               <div>
                 <h5 class="fw-bold mb-1">Dental Surgery</h5>
-                <p class="mb-0">Complex extractions and minor oral surgeries performed with precision and care.</p>
+                <p class="mb-0">Safe and precise tooth extractions and minor oral surgeries, performed with expert care and comfort.</p>
               </div>
             </div>
           </div>
@@ -245,17 +248,17 @@
               <img src="./service-icon-6.png" width="50" class="me-3" alt="Cosmetic Teeth">
               <div>
                 <h5 class="fw-bold mb-1">Cosmetic Dentistry</h5>
-                <p class="mb-0">Transform your smile with veneers, bonding, and whitening procedures.</p>
+                <p class="mb-0">Enhance your smile with professional whitening, veneers, and tooth bonding for natural-looking results.</p>
               </div>
             </div>
           </div>
 
           <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
-              <img src="./service-icon-2.png" width="50" class="me-3" alt="Teeth Alignment">
+              <img src="./enamel_4444068.png" width="50" class="me-3" alt="Teeth Alignment">
               <div>
                 <h5 class="fw-bold mb-1">Prosthodontics</h5>
-                <p class="mb-0">Innovative orthodontic treatments to correct bite issues and jaw alignment.</p>
+                <p class="mb-0">Expert restoration of damaged or missing teeth using crowns, bridges, dentures, and dental implants.</p>
               </div>
             </div>
           </div>
@@ -263,7 +266,7 @@
          
          <div class="mb-4 service-card border rounded p-3 shadow-sm">
             <div class="d-flex">
-              <img src="./service-icon-5.png" width="50" class="me-3" alt="X-Ray">
+              <img src="./anatomy_1739744.png" width="50" class="me-3" alt="X-Ray">
               <div>
                 <h5 class="fw-bold mb-1">X-Ray (Panoramic Periapical)</h5>
                 <p class="mb-0">High-resolution imaging for accurate diagnostics and effective treatment planning.</p>
@@ -276,7 +279,7 @@
     </div>
   </section>
 </div>
-<div class="container-fluid min-vh-100 p-5 background-contain">
+<div class="container-fluid min-vh-100 p-5 background-contain" id="container-about">
  
     
     <!-- About Section -->
@@ -433,7 +436,7 @@
     </div>
   </div>
 </div>
- <div class="container py-5 mb-5">
+ <div class="container py-5 mb-5" id="container-contact">
   <div class="row justify-content-center ">
       
     <div class="col-12 col-lg-12">
