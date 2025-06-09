@@ -1,30 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Dancing+Script:wght@400..700&family=Kapakana:wght@300..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+:root{
+  --fg-color: #92bb00;
+}
 html,body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
     scroll-behavior: smooth!important;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
- 
-  color: white!important;
- 
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+     box-sizing: inherit;
+     color: white!important;
+  }
+  .icon{
+    background-color: var(--fg-color);
   }
 #background-container{
     position: relative!important;
-
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.76), rgba(0, 4, 3, 0.949)), url("./care2.jpg");
-    background-size: cover;
+    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.41), rgba(0, 4, 3, 0.508)), url("./care2.jpg");
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    image-resolution: 1000%;
     background-attachment: fixed;
-   
+}
+.bg-con{
+   position: relative!important;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.511), rgba(0, 4, 3, 0.785)), url("./RIC09349.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-resolution: 1000%;
+    background-attachment: fixed;
+}
+ .bg-card1 {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0px 2px 12px rgba(11, 145, 6, 0.527);
+}
+
+/* Circle background with gradient */
+.bg-card1::before {
+  content: "";
+  position: absolute;
+  width: 500px; /* Adjust size */
+  height: 500px;
+  background: radial-gradient(circle at right bottom, rgba(9, 215, 9, 0.282), transparent 60%); /* Green, semi-transparent */
+  border-radius: 50%;
+  bottom: -20%; /* Move up */
+  right: -10%;
+
+  z-index: 0;
+}
+
+
+.bg-card1 .card-body {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.bg-aboutM{
+    /* position: relative!important;
+    width: 100%;
+    height: 100vh; */
+    /* background-image: linear-gradient(to right, rgba(17, 17, 17, 0.41), rgba(0, 4, 3, 0.508)), url("./care2.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-resolution: 1000%;
+    background-attachment: fixed; */
+}
+.content-box1{
+  position: relative;
+  display: flex;
+  width: 90%;
 }
  /* #background-container {
     position: relative !important;
@@ -60,12 +119,14 @@ html,body {
   height: 4px;
   background-color: green;
 } */
-
 .nav-link {
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
   position: relative;
   display: inline-block;
-  color: inherit;
+  color: white!important;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -75,14 +136,35 @@ html,body {
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 2px;
-  background-color: #08c385; /* Customize underline color */
+  height: 3px;
+  background-color: white;
   transition: width 0.4s ease, left 0.4s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
   left: 0;
+}
+
+/* Default text color (white) */
+/* .navbar {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color:var(--fg-color) !important;
+} */
+#to{
+ font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+   color: rgb(255, 255, 255)!important;
 }
 .text-1{
   font-family: "Poppins", sans-serif;
@@ -92,9 +174,10 @@ html,body {
    color: rgb(255, 255, 255)!important;
 }
 .text-2{
-  font-family: "Kapakana", cursive;
-  font-weight: 6700;
-  font-size: 60px;
+
+   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
   font-style: normal;
    color: rgb(255, 255, 255)!important;
 }
@@ -103,16 +186,29 @@ html,body {
   font-weight: 300;
   font-size: 20px;
   font-style: normal;
-   color: rgb(253, 253, 253)!important;
+   color: rgb(48, 48, 48)!important;
+}
+.text-9{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+   color: rgb(240, 240, 240)!important;
 }
 .text-4{
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
+    font-family: 'Anton SC';
   font-style: normal;
-   line-height: 3rem;
-   color: rgb(3, 230, 169)!important;
-   
+  font-weight: 400;
+  font-size: 5rem;
+  font-display: swap;
+  /* font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  font-style: normal;
+   */
+    line-height: 4.5rem;
+   color: var(--fg-color)!important;
+   text-shadow: 1px 1px 0px white;
 }
 .text-secondary{
   font-family:"Poppins", sans-serif;
@@ -129,22 +225,28 @@ html,body {
  font-family: "Poppins", sans-serif;
   font-weight: 700!important;
   font-size: 40px;
-  color: rgb(0, 128, 90)!important;
+  color: var(--fg-color)!important;
 }
 .card-title{
   font-family: "Poppins", sans-serif!important;
-  color: rgb(0, 128, 90)!important;
+  color: var(--fg-color)!important;
 }
 .card-text{
   font-family: "Poppins", sans-serif!important;
   color: rgb(34, 34, 34)!important;
 }
 .mb-1{
- color: rgb(6, 114, 85)!important;
+ color: var(--fg-color)!important;
 }
+ /* .mb-2{
+  font-family: "Poppins",sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+   color: var(--fg-color)!important;
+ } */
 .mb-0{
   font-family: "Poppins", sans-serif!important;
-  color: black!important;
+  color: rgba(0, 0, 0, 0.682)!important;
 }
 .text-6{
   font-family: "Poppins", sans-serif!important;
@@ -161,40 +263,55 @@ html,body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.76), rgba(3, 96, 96, 0.862)), url("./care2.jpg");
+    /* background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.76), rgba(4, 4, 4, 0.862)), url("./dentist2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
+.vertical-lines {
+  position:absolute;
+  width: 4px;
+  top: -20px;
+  left: 0;
+  height: 100%; /* this might collapse unless set explicitly */
+  background-color: var(--fg-color); /* Bootstrap primary */
+  border-radius: 2px;
+  min-height: 280px; /* Force a visible height */
+}
+.vertical-divider {
+  width: 4px;
+  height: 100%;
+  background-color: var(--fg-color); /* Bootstrap Primary */
+  border-radius: 2px;
+  min-height: 250px;
+}
+
+
 .shadow-bg {
   box-shadow: 0 4px 20px rgba(8, 195, 133, 0.3)!important; /* Subtle green glow */
 }
 
 .read-more{
-   border:none!important;
-   background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important;
+   border:1px solid var(--fg-color)!important;
+  background-image: linear-gradient(to right, rgb(89, 193, 9), #92bb00)!important;
 }
 .footer__bottom{
-   background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important;
+    background-image: linear-gradient(to right, rgb(89, 193, 9), #92bb00)!important;
 }
 .navbar-bg{
-  color: white!important;
-   background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important;
+  color: var(--fg-color)!important;
+  background-color:var(--fg-color)!important;
+   /* background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important; */
 }
-#explore{
-  font-family:"Poppins",sans-serif;
-  font-size: 16px;
-  padding: 12px;
-  min-width: 25%;
-  border:1px solid rgb(3, 230, 169)!important;
-  background-color: transparent;
-}
+
 #btn-modal{
    font-family:"Poppins",sans-serif;
   font-size: 16px;
   padding: 12px;
   min-width: 25%;
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
   border:1px solid rgb(3, 230, 169)!important;
   background-color: transparent;
 }
@@ -203,28 +320,38 @@ html,body {
 #btn-modal {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  padding: 12px;
-  min-width: 25%;
-  border:1px solid rgb(3, 230, 169)!important;
-  color: rgb(3, 230, 169);
-  transition: all 0.3s ease;
+  padding: 8px;
+  min-width: 20%;
+  border:1px solid var(--fg-color)!important;
+  background-image: linear-gradient(to right, rgb(89, 193, 9), #92bb00)!important;
+  /* color: rgb(3, 230, 169); */
+ 
   
   cursor: pointer;
 }
 
 #explore:hover,
 #btn-modal:hover {
-  background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important;
+   transition: all 0.3s ease;
+  background-image: none!important;
   color: white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .modal-header{
-  background-image: linear-gradient(to left, rgb(0, 128, 90), rgb(9, 160, 120))!important;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--fg-color)!important;
 }
 .modal-body>p{
   font-family: "Poppins",sans-serif;
   text-align: start;
   margin-bottom: 20px;
+}
+#appointmentForm{
+  position: relative;
+  padding:2rem;
 }
 .modal-body>p,
 .form-label
@@ -234,16 +361,27 @@ html,body {
 .modal-content>.modal-header>.btn-close{
   color: white!important;
 }
-.btn-submit{
-  width: 100%;
-  background-image: linear-gradient(to left, #70f570, #49c628)!important;
+.btn-submit {
+  float: right;
+  width: 20%;
+  background-image: linear-gradient(to right, rgb(89, 193, 9), #92bb00) !important;
   border: none;
+  color: white;
+  transition: all 0.3s ease;
 }
+
+.btn-submit:hover {
+  background-image: linear-gradient(to right, #92bb00, rgb(89, 193, 9));
+  filter: brightness(1.1);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
   .section-title1{
-    font-family: "Poppins", sans-serif;
-    font-weight: 800!important;
-    font-size: 25px!important;
-    color: rgb(0, 128, 90)!important;
+     font-family: "Poppins", sans-serif;
+  font-weight: 700!important;
+  font-size: 40px;
+  color: var(--fg-color)!important;
 }
 .vertical-underline {
   position: relative;
@@ -259,7 +397,7 @@ html,body {
   transform: translateY(-50%);
   width: 6px;
   height: 60px;
-  background-color: #08c385; 
+  background-color: var(--fg-color); 
   border-radius: 2px;
 }
 small{
@@ -268,16 +406,32 @@ small{
 }
 .text4{
   font-family:"Poppins",sans-serif;
-color: rgb(0, 128, 90)!important;
+color:var(--fg-color)!important;
   font-size: 25px;
   font-weight: 700;
 }
+.text6{
+  font-family: "Poppins",sans-serif!important;
+  font-weight: 800!important;
+  color: var(--fg-color)!important;
+}
 .t-1{
   font-family: "Poppins",sans-serif;
-  color: rgb(4, 180, 107)!important; 
+  color:var(--fg-color)!important; 
   font-weight: 600;
 }
-
+.text-about{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700!important;
+  font-size: 40px;
+  color: var(--fg-color)!important;
+}
+.about-head{
+  font-family: "Poppins",sans-serif!important;
+  font-weight: 20px!important;
+  font-weight: 700!important;
+  color:  gray!important;
+}
 .heading-with-line::before {
   content: "";
   position: absolute;
@@ -317,218 +471,80 @@ color: rgb(0, 128, 90)!important;
     display: none; 
   }
 } */
-
-@media (max-width: 450px) {
-  html,body,*{
-    position: relative;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-   .heading-with-line::before {
-    display: none; 
-  }
-  .responsive-logo {
-    width: 10%;
-    height: 10%;
-  }
-  #btn-modal{
-    font-size: 12px;
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(9, 164, 172, 0.814), rgba(9, 160, 120, 0.688))!important;
-  }
-  .section-title{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700!important;
-    font-size: 30px!important;
-    color: rgb(0, 128, 90)!important;
-}
-  .section-title1{
-    font-family: "Poppins", sans-serif;
-    font-weight: 800!important;
-    font-size: 25px!important;
-    color: rgb(0, 128, 90)!important;
-}
-.vertical-underline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px; /* space for the line */
-}
-
-.vertical-underline::before {
-  content: "";
+.cards-wrapper {
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 40px; /* adjust height */
-  background-color: #037d6d; /* change to match your theme */
-  border-radius: 2px;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%); 
+  padding-top: 2rem;
 }
 
+.feature-card {
+  width: 18rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #333;
+}
 
-  .text-2{
-    font-size: 3rem;
-    line-height: 1.5px;
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--fg-color);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 450px){
+  html,body,*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box!important;
   }
   .text-4{
-    font-size: 2rem;
-  }
-  .text-1{
-    font-size: 2rem;
-  }
-  .text-3{
-    font-size: 15px;
-    text-align: start;
-  }
-  .modal-body>p,
-  .form-label
-  {
-    font-family: "Poppins",sans-serif;
-    color: black!important;
-  }
-   .modal-body>p
-  {
-    font-family: "Poppins",sans-serif;
-    color: rgb(3, 90, 85)!important;
-    font-weight: 400;
-  }
-  #explore {
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 1rem !important;
-  }
-
-  .hero-btns {
-    flex-direction: column-reverse !important;
-    align-items: center;
-  }
+    font-family: 'Anton SC';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  font-display: swap;
+  /* font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  font-style: normal;
+   */
+    line-height: 4.5rem;
+   color: var(--fg-color)!important;
+   text-shadow: 1px 1px 0px white;
 }
-@media (max-width: 576px) {
-  .btn-box {
-    padding: 0 !important;
-    margin: 0 !important;
+.content-box1{
+    padding: 1.6rem;
+    width: 100%!important;
   }
-
-  #btn-modal,
-  #explore {
-    width: 100% !important;
-    margin-bottom: 0.75rem;
-  }
-}
-@media (max-width: 540px) {
-  html, body, * {
-    position: relative;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-
-  .heading-with-line::before {
-    display: none; 
-  }
-#background-container{
+  #background-container{
     position: relative!important;
-
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(130deg, rgba(0, 0, 0, 0.76), rgba(0, 4, 3, 0.547)), url("./care2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   
-}
-  .responsive-logo {
-    width: 20%; /* increased for better visibility */
-    height: auto;
+    margin: 0!important;
   }
-
-  #btn-modal {
-    font-size: 0.75rem;
-    width: 100%;
-    background-image: linear-gradient(
-      to right,
-      rgba(9, 164, 172, 0.814),
-      rgba(9, 160, 120, 0.688)
-    ) !important;
-  }
-
-  .section-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700 !important;
-    font-size: 1.75rem !important;
-    color: rgb(0, 128, 90) !important;
-  }
-
-  .section-title1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800 !important;
-    font-size: 1.5rem !important;
-    color: rgb(0, 128, 90) !important;
-  }
-
-  .vertical-underline {
-    position: relative;
-    display: inline-block;
-    padding-left: 20px;
-  }
-
-  .vertical-underline::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 32px;
-    background-color: #037d6d;
-    border-radius: 2px;
-  }
-
-  .text-2 {
-    font-family: poppins;
-    font-size: 1.4rem;
-    font-weight: 300;
   
-    text-align: start;
-  }
-  .text-1{
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.3;
-    text-align: start;
-  }
-.text-4 {
-    font-size: 2.7rem;
-    font-weight: 700;
-    line-height: 1.3;
-    text-align: start;
-  }
-  .text-3 {
-    font-size: 14px;
-    color: rgb(188, 186, 186)!important;
-    text-align: start;
-  }
-
-  .modal-body > p,
-  .form-label {
-    font-family: "Poppins", sans-serif;
-    color: black !important;
-  }
-
-  .modal-body > p {
-    color: rgb(3, 90, 85) !important;
-    font-weight: 400;
-  }
-
-  #explore {
-    font-size: 1rem;
-    width: 100%;
-    margin-bottom: 1rem !important;
-  }
-
-  .hero-btns {
-    flex-direction: column-reverse !important;
-    align-items: center;
-  }
+  .btn-submit {
+  width: 100%;
+}
+#appointmentForm{
+  position: relative;
+  padding:2px;
+}
+.text-2{
+  font-size: 1.6rem;
+}
+.text-1{
+font-size: 1.8rem;
+}
+.text-4{
+  line-height: 1em;
+}
+.logo1{
+  font-size: 20px!important;
+}
 }
