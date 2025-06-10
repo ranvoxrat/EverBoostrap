@@ -347,7 +347,8 @@ html,body {
 .modal-body>p{
   font-family: "Poppins",sans-serif;
   text-align: start;
-  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
 }
 #appointmentForm{
   position: relative;
@@ -356,6 +357,7 @@ html,body {
 .modal-body>p,
 .form-label
 {
+  font-family: "Poppins",sans-serif;
   color: black!important;
 }
 .modal-content>.modal-header>.btn-close{

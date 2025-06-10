@@ -85,7 +85,7 @@
       </div>
 
       <div class="modal-body">
-      <p class="d-flex align-items-center rounded-2 p-2 text-light">
+        <p class="d-flex align-items-center rounded-2">
           <ion-icon name="alert-circle-outline" class="me-2 text-warning fs-5"></ion-icon>
           Please be advised that our clinic is closed every Sunday.
         </p>
@@ -93,7 +93,7 @@
 
 
         <form id="appointmentForm">
-          <div class="row">
+          <div class="row p-2">
             <div class="col-md-4 text-start">
               <label for="firstname" class="form-label">First Name <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Firstname" required>
@@ -108,7 +108,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row p-2">
             <div class="col-md-6 text-start">
               <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
@@ -119,12 +119,12 @@
             </div>
           </div>
 
-          <div class="text-start">
+          <div class="text-start p-2">
             <label for="address" class="form-label">Address</label>
             <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address">
           </div>
 
-          <div class="row">
+          <div class="row p-2">
             <div class="col-md-6 text-start">
               <label for="date" class="form-label">Preferred Date <span class="text-danger">*</span></label>
               <input type="date" class="form-control" id="date" name="date" required>
@@ -144,7 +144,7 @@
             </div>
           </div>
 
-          <div class="text-start">
+          <div class="text-start p-2">
             <label for="service" class="form-label">Service <span class="text-danger">*</span></label>
             <select id="service" name="service" class="form-select" required>
               <option value="" disabled selected>Select a service</option>
@@ -154,25 +154,31 @@
               <option value="4">Extraction (Bunot)</option>
               <option value="5">Frenectomy</option>
               <option value="6">Gingivectomy</option>
-              <option value="7">New Ortho/Braces</option>
+              <option value="7">New Ortho/Braces Removal/Installation</option>
               <option value="8">Oral Prophylaxis (Cleaning)</option>
               <option value="9">RB/Wire</option>
               <option value="10">Resto (Pasta)</option>
               <option value="11">Surgery</option>
               <option value="12">TADS</option>
               <option value="13">Whitening</option>
-              <option value="0">Others</option>
+              <option value="13">Root Canal treatment(RCT)</option>
+              <option value="13">Retainer/Biteplance Impression/Installation</option>
+              <option value="0">Suture Removal(SR)</option>
             </select>
           </div>
-
-          <div class="form-check mb-3 text-start">
+           <div class="row p-2">
+            <div class="col-md-6 text-start">
+               <div class="form-check mb-3 text-start">
             <input class="form-check-input" type="checkbox" id="newPatient1" name="new_patient1">
             <label class="text-black" for="newPatient1">
               Are you a new patient?
             </label>
+              </div>
+            </div>
           </div>
+         
 
-          <div class="mb-3" id="referralGroup1" style="display: none;">
+          <div class="mb-3 p-2" id="referralGroup1" style="display: none;">
             <label for="referralSource1" class="form-label">
               Where did you find out about Ever Dental Center? <span class="text-danger">*</span>
             </label>
